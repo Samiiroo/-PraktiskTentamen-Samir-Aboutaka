@@ -50,14 +50,14 @@ fetch(URL).then(
         })
         
             
-///constructor
+///constructor 
 function Country(_img,_name,_timezone){
     this.img = _img;
     this.name = _name;
     this.timezone=_timezone;
 
 }
-
+///PROTOTYP skapar den här för den ska hjälpa oss rätta tiden
     Country.prototype.Time = function () {
         let date = new Date;
         let hourHere = date.getUTCHours();
